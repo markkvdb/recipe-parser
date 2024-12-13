@@ -1,0 +1,210 @@
+{
+    "title": "Egg Sambal Shakshuka",
+    "description": "A fusion dish combining Malaysian and Middle Eastern influences, featuring eggs cooked in a spicy sambal-tomato sauce. This dish is inspired by Malaysian nasi lemak and Middle Eastern shakshuka.",
+    "author": "Helen and Yotam",
+    "created_at": "2024-12-13T15:16:22.631243",
+    "prep_time": "PT20M",
+    "cook_time": "PT45M",
+    "total_time": "PT1H5M",
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+        {
+            "name": "fennel seeds",
+            "quantity": 1.5,
+            "unit": "tsp",
+            "notes": null
+        },
+        {
+            "name": "cloves",
+            "quantity": 2.0,
+            "unit": "piece",
+            "notes": null
+        },
+        {
+            "name": "cardamom pods",
+            "quantity": 2.0,
+            "unit": "piece",
+            "notes": "seeds only"
+        },
+        {
+            "name": "cinnamon",
+            "quantity": 0.5,
+            "unit": "tsp",
+            "notes": "ground"
+        },
+        {
+            "name": "curry powder",
+            "quantity": 1.5,
+            "unit": "tbsp",
+            "notes": "medium"
+        },
+        {
+            "name": "olive oil",
+            "quantity": 60.0,
+            "unit": "ml",
+            "notes": null
+        },
+        {
+            "name": "black mustard seeds",
+            "quantity": 0.5,
+            "unit": "tsp",
+            "notes": null
+        },
+        {
+            "name": "curry leaves",
+            "quantity": 20.0,
+            "unit": "piece",
+            "notes": null
+        },
+        {
+            "name": "red onion",
+            "quantity": 1.0,
+            "unit": "piece",
+            "notes": "medium, halved and thinly sliced (160g)"
+        },
+        {
+            "name": "ginger",
+            "quantity": 10.0,
+            "unit": "g",
+            "notes": "peeled and finely grated"
+        },
+        {
+            "name": "garlic",
+            "quantity": 5.0,
+            "unit": "piece",
+            "notes": "crushed to a paste"
+        },
+        {
+            "name": "cilantro",
+            "quantity": 10.0,
+            "unit": "g",
+            "notes": "stalks finely chopped, leaves reserved for serving"
+        },
+        {
+            "name": "datterini tomatoes",
+            "quantity": 150.0,
+            "unit": "g",
+            "notes": "or cherry tomatoes"
+        },
+        {
+            "name": "sambal oelek",
+            "quantity": 2.0,
+            "unit": "tsp",
+            "notes": null
+        },
+        {
+            "name": "diced tomatoes",
+            "quantity": 400.0,
+            "unit": "g",
+            "notes": "canned"
+        },
+        {
+            "name": "tamarind concentrate",
+            "quantity": 100.0,
+            "unit": "ml",
+            "notes": null
+        },
+        {
+            "name": "water",
+            "quantity": 300.0,
+            "unit": "ml",
+            "notes": null
+        },
+        {
+            "name": "palm sugar",
+            "quantity": 1.0,
+            "unit": "tbsp",
+            "notes": "or light brown sugar"
+        },
+        {
+            "name": "eggs",
+            "quantity": 5.0,
+            "unit": "piece",
+            "notes": null
+        },
+        {
+            "name": "salt",
+            "quantity": 1.0,
+            "unit": "to_taste",
+            "notes": null
+        },
+        {
+            "name": "black pepper",
+            "quantity": 1.0,
+            "unit": "to_taste",
+            "notes": null
+        }
+    ],
+    "instructions": [
+        {
+            "order": 1,
+            "instruction": "Toast fennel seeds, cloves, and cardamom seeds in a small dry frying pan over medium-low heat for about 2 minutes until fragrant.",
+            "time": "PT2M",
+            "note": null
+        },
+        {
+            "order": 2,
+            "instruction": "Grind the toasted spices to a powder in a spice grinder or mortar and pestle. Add the ground cinnamon and curry powder and set aside.",
+            "time": null,
+            "note": null
+        },
+        {
+            "order": 3,
+            "instruction": "Heat 3 tablespoons of olive oil in a large sauté pan (about 26cm wide) over medium heat. Add mustard seeds and 10 curry leaves, cook until seeds begin to pop.",
+            "time": "PT1M",
+            "note": null
+        },
+        {
+            "order": 4,
+            "instruction": "Add onion and cook, stirring frequently, until starting to color.",
+            "time": "PT7M",
+            "note": null
+        },
+        {
+            "order": 5,
+            "instruction": "Add ginger, garlic, cilantro stalks, and fresh tomatoes. Cook for 5 minutes.",
+            "time": "PT5M",
+            "note": null
+        },
+        {
+            "order": 6,
+            "instruction": "Add the fennel spice mix and cook until fragrant.",
+            "time": "PT2M",
+            "note": null
+        },
+        {
+            "order": 7,
+            "instruction": "Add sambal oelek, canned tomatoes, tamarind, water, sugar, and 1¼ teaspoons of salt. Stir well and bring to a simmer. Reduce heat to medium-low and cook uncovered until thickened.",
+            "time": "PT25M",
+            "note": null
+        },
+        {
+            "order": 8,
+            "instruction": "Crack the eggs into the sambal, season with salt and pepper. Cover and cook until egg whites are fully cooked and yolks are soft.",
+            "time": "PT8M",
+            "note": null
+        },
+        {
+            "order": 9,
+            "instruction": "Heat remaining 1 tablespoon of oil in a small pan over medium heat. Add remaining curry leaves and cook until very fragrant.",
+            "time": "PT1M",
+            "note": null
+        },
+        {
+            "order": 10,
+            "instruction": "Drizzle the curry leaf oil over the eggs, scatter with cilantro leaves, and serve.",
+            "time": null,
+            "note": null
+        }
+    ],
+    "tags": [
+        "eggs",
+        "spicy",
+        "breakfast",
+        "fusion",
+        "make ahead"
+    ],
+    "cuisine_type": "Fusion Malaysian-Middle Eastern",
+    "category": null
+}
