@@ -1,0 +1,108 @@
+{
+    "title": "Spelt with Chorizo, Sweet Potato, Red Onion & Spinach",
+    "description": "A robust, substantial autumnal dinner where any leftovers will make for a really superior lunchbox. Use pearl barley if more readily available than spelt.",
+    "author": "Unknown",
+    "created_at": "2024-12-14T17:25:34.478217",
+    "prep_time": "PT15M",
+    "cook_time": "PT1H",
+    "total_time": "PT1H15M",
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+        {
+            "name": "spelt",
+            "quantity": 150.0,
+            "unit": "g",
+            "notes": "or pearl barley, rinsed"
+        },
+        {
+            "name": "chicken stock",
+            "quantity": 350.0,
+            "unit": "ml",
+            "notes": null
+        },
+        {
+            "name": "sweet potato",
+            "quantity": 2.0,
+            "unit": "piece",
+            "notes": "large, peeled and cut into 2½cm chunks"
+        },
+        {
+            "name": "red onion",
+            "quantity": 1.0,
+            "unit": "piece",
+            "notes": "peeled and quartered"
+        },
+        {
+            "name": "garlic",
+            "quantity": 5.0,
+            "unit": "piece",
+            "notes": "cloves, skin on"
+        },
+        {
+            "name": "cooking chorizo",
+            "quantity": 225.0,
+            "unit": "g",
+            "notes": "cut into 2cm chunks"
+        },
+        {
+            "name": "olive oil",
+            "quantity": 1.0,
+            "unit": "tbsp",
+            "notes": "extra hot"
+        },
+        {
+            "name": "spinach",
+            "quantity": 300.0,
+            "unit": "g",
+            "notes": "roughly chopped"
+        },
+        {
+            "name": "lemon",
+            "quantity": 1.0,
+            "unit": "piece",
+            "notes": "juice only"
+        },
+        {
+            "name": "sea salt",
+            "quantity": 1.0,
+            "unit": "to_taste",
+            "notes": null
+        },
+        {
+            "name": "black pepper",
+            "quantity": 1.0,
+            "unit": "to_taste",
+            "notes": "freshly ground"
+        }
+    ],
+    "instructions": [
+        {
+            "order": 1,
+            "instruction": "Preheat the oven to 160°C fan/180°C/gas 4. In a roasting tin, mix together the spelt or pearl barley, chicken stock, sweet potato chunks, onion and garlic. Rub the chorizo with the olive oil and scatter over the pearl barley mixture.",
+            "time": null,
+            "note": null
+        },
+        {
+            "order": 2,
+            "instruction": "Cover the dish tightly with foil, then transfer to the oven and cook for 1 hour.",
+            "time": "PT1H",
+            "note": null
+        },
+        {
+            "order": 3,
+            "instruction": "Remove the foil and stir in the spinach. Season to taste with the lemon juice, sea salt and freshly ground black pepper, and serve hot.",
+            "time": null,
+            "note": null
+        }
+    ],
+    "tags": [
+        "autumnal",
+        "one-pot",
+        "hearty",
+        "spelt",
+        "chorizo"
+    ],
+    "cuisine_type": "Mediterranean",
+    "category": "main_course"
+}

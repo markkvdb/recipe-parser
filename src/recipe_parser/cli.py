@@ -4,19 +4,17 @@ from pathlib import Path
 
 import typer
 from anthropic import Anthropic
-import httpx
-from bs4 import BeautifulSoup
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import HttpUrl, ValidationError
+from pydantic import HttpUrl, ValidationError, SecretStr
 
-from recipe_parser.parser import parse_text_to_recipe
+from recipe_parser.parser import parse_input_to_recipe, source_to_input
 from recipe_parser.utils import format_fn
 
 
 class Settings(BaseSettings):
     """Settings for the recipe parser."""
 
-    api_key: str
+    api_key: SecretStr
     claude_model_name: str
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
@@ -71,23 +69,16 @@ def parse(
     """Parse a recipe from a URL or file."""
     settings = Settings()
 
+    # Parse source to Claude content
+    input = source_to_input(source)
+
     # Create output directory if it doesn't exist
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Determine if source is URL or file
-    if source.startswith("http"):
-        response = httpx.get(source)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        text = soup.get_text()
-    else:
-        text = Path(source).read_text()
+    client = Anthropic(api_key=settings.api_key.get_secret_value())
 
-
-    client = Anthropic(api_key=settings.api_key)
-
-    recipe = parse_text_to_recipe(
-        text=text,
+    recipe = parse_input_to_recipe(
+        input=input,
         client=client,
         model_name=settings.claude_model_name,
         system_path=system_prompt,
