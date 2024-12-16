@@ -1,5 +1,5 @@
 from pathlib import Path
-from datetime import timedelta
+import random
 
 from fasthtml.common import *
 from monsterui.core import *
@@ -7,7 +7,7 @@ from monsterui.core import *
 from recipe_parser.models import Recipe
 from recipe_parser.utils import format_duration
 
-
+RECIPE_DIR = Path("recipes")
 app, rt = fast_app(hdrs=Theme.slate.headers())
 
 
@@ -46,22 +46,8 @@ def difficulty_to_stars(difficulty):
     }
     return stars.get(difficulty.lower(), '☆☆☆')
 
-@rt('/')
-def get(recipe_name: str | None = None):
-    if recipe_name is not None:
-        recipe_path = Path(f"recipes/{recipe_name}.json")
-    else:
-        recipe_path = Path("otto.json")
-
-    if not recipe_path.exists():
-        return Div(
-            P("404 Not Found: The requested recipe does not exist.", cls="text-red-500"),
-            cls="min-h-screen bg-muted p-2 md:p-4"
-        )  # 
-        
-    with recipe_path.open() as f:
-        recipe = Recipe.model_validate_json(f.read())
-    
+def render_recipe(recipe: Recipe) -> Div:
+    """Render recipe."""
     return Div(
         Article(
             # Header section
@@ -153,5 +139,32 @@ def get(recipe_name: str | None = None):
         ),
         cls="min-h-screen bg-muted p-2 md:p-4"
     )
+
+def recipe_page(recipe_path: Path) -> Div:
+    """Recipe page."""
+    if not recipe_path.exists():
+        return Div(
+            P("404 Not Found: The requested recipe does not exist.", cls="text-red-500"),
+            cls="min-h-screen bg-muted p-2 md:p-4"
+        )  # 
+        
+    with recipe_path.open() as f:
+        recipe = Recipe.model_validate_json(f.read())
+
+    return render_recipe(recipe)
+
+
+@rt('/')
+def get(recipe_name: str | None = None):
+    recipe_path = random.choice(list(RECIPE_DIR.iterdir()))
+
+    return recipe_page(recipe_path)
+
+
+@rt('/recipes/{recipe_name}')
+def get_recipe(recipe_name: str):
+    recipe_path = RECIPE_DIR / f"{recipe_name}.json"
+
+    return recipe_page(recipe_path)
 
 serve()
