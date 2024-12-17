@@ -1,5 +1,9 @@
 # Recipe Parser
 
+Recipe Parser is a tool that allows you to parse recipes from various sources and convert them into a JSON format. The recipes can be shown in a web application or saved to a database. Example screenshot:
+
+![recipe-1](example_recipe.png)
+
 ## Quickstart
 
 ### Application
